@@ -16,6 +16,7 @@ const noTraducir = ["slug", "id", "_id", "image", "img", "icon", "url", "link", 
 const glosario = [
     [/vasos?|recipientes?|embarcaci(?:ón|ones)|nav[ií]os?|buques?/gi, "vasija"],
     [/encantos?|hechizos?/gi, "amuleto"],
+    [/resplandor(?:es)?|radiancias?/gi, "destello"],
 ]
 
 // Aplica el glosario conservando mayúscula inicial y plural
