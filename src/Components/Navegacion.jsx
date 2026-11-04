@@ -5,7 +5,7 @@ const enlaces = [
     { to: "/", texto: "INICIO" },
     { to: "/Galeria", texto: "GALERÍA" },
     { to: "/Formulario", texto: "FORMULARIO" },
-    { to: "/h", texto: "H" },
+    { to: "/h", texto: "PRESS START" },
     { to: "/Jefe", texto: "API" },
 ];
 
