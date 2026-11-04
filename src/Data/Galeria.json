@@ -15,7 +15,7 @@
         "descripcionG": "Gran mosca que ataca desde el aire y llama a sus crías para rodearte."
     },
     {
-        "imagenG": "hornet",
+        "imagenG": "hornet-protector",
         "tituloG": "Hornet",
         "descripcionG": "Protectora de Hallownest, veloz con su aguja e hilo. La enfrentas en las Sendas Verdes."
     },
@@ -45,7 +45,7 @@
         "descripcionG": "Líder de la Compañía Grimm, que invita al Caballero a un ritual de fuego y espectáculo."
     },
     {
-        "imagenG": "hollow-knight",
+        "imagenG": "the-hollow-knight",
         "tituloG": "Caballero Hueco",
         "descripcionG": "Vasija sellada en el Templo del Huevo Negro para contener la infección de Hallownest."
     },
@@ -55,7 +55,7 @@
         "descripcionG": "La vasija perfecta, el desafío más difícil que espera en Godhome."
     },
     {
-        "imagenG": "radiance",
+        "imagenG": "the-radiance",
         "tituloG": "Destello",
         "descripcionG": "Antigua luz olvidada y origen de la infección. El jefe final de uno de los desenlaces."
     }
