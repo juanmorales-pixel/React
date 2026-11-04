@@ -1,0 +1,134 @@
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ---------- Navegación ---------- */
+.Navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 24px;
+    padding: 16px;
+    background-color: #1c1c1c;
+}
+
+.Nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.Nav-link:hover {
+    background-color: #244668;
+}
+
+.Nav-link-activo {
+    background-color: rgb(224, 60, 49);
+}
+
+/* ---------- Inicio (banner) ---------- */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: clamp(240px, 45vh, 420px);
+    padding: 24px;
+    background-image: url("../Assets/imagenes/Banner.png");
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+.Imagen {
+    width: min(300px, 60vw);
+    height: auto;
+}
+
+/* ---------- Galería (tablero minimalista, sin decoración) ---------- */
+.Gal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.TarjetaG-Container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ImagenG {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.TituloGContainer {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.DesG {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* ---------- Formulario ---------- */
+.Formulario {
+    width: 100%;
+    max-width: 320px;
+    margin: 24px auto;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #353535;
+    border: 1px solid #444;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Campo-container {
+    margin-bottom: 12px;
+}
+
+.Formulario input {
+    width: 100%;
+}
+
+.Formulario button {
+    margin-top: 8px;
+}
+
+.Formulario button img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.Gif-formulario {
+    display: block;
+    margin: 16px auto 0;
+    max-width: 200px;
+    max-height: 280px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
