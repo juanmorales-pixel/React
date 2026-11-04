@@ -1,38 +1,8 @@
 [
     {
-        "imagenG": "false-knight",
-        "tituloG": "Falso Caballero",
-        "descripcionG": "Enorme insecto acorazado que custodia los Cruces Olvidados. Es el primer gran jefe del viaje."
-    },
-    {
-        "imagenG": "gruz-mother",
-        "tituloG": "Gruz Madre",
-        "descripcionG": "Larva gigante que vuela y embiste desde el techo. Un jefe temprano para aprender a esquivar."
-    },
-    {
-        "imagenG": "vengefly-king",
-        "tituloG": "Rey Vengamosca",
-        "descripcionG": "Gran mosca que ataca desde el aire y llama a sus crías para rodearte."
-    },
-    {
-        "imagenG": "hornet-protector",
-        "tituloG": "Hornet",
-        "descripcionG": "Protectora de Hallownest, veloz con su aguja e hilo. La enfrentas en las Sendas Verdes."
-    },
-    {
-        "imagenG": "soul-master",
-        "tituloG": "Maestro de Almas",
-        "descripcionG": "Erudito de la Ciudad de las Lágrimas, consumido por su obsesión con el poder del alma."
-    },
-    {
-        "imagenG": "mantis-lords",
-        "tituloG": "Señores Mantis",
-        "descripcionG": "Guerreros de la Aldea Mantis que ponen a prueba a todo el que quiera ganarse su respeto."
-    },
-    {
-        "imagenG": "watcher-knights",
-        "tituloG": "Caballeros Vigilantes",
-        "descripcionG": "Guardianes acorazados de la Torre del Vigía, en la Ciudad de las Lágrimas."
+        "imagenG": "absolute-radiance",
+        "tituloG": "Destello absoluto",
+        "descripcionG": "Versión definitiva del Destello y uno de los desafíos más difíciles de Godhome."
     },
     {
         "imagenG": "broken-vessel",
@@ -40,14 +10,144 @@
         "descripcionG": "Vasija infectada y atrapada en las Cuencas Antiguas, sin la fuerza para librarse de la infección."
     },
     {
-        "imagenG": "troupe-master-grimm",
-        "tituloG": "Maestro Grimm",
-        "descripcionG": "Líder de la Compañía Grimm, que invita al Caballero a un ritual de fuego y espectáculo."
+        "imagenG": "brooding-mawlek",
+        "tituloG": "Mawlek cavilante",
+        "descripcionG": "Gran insecto opcional de los Cruces Olvidados que salta y escupe para aplastarte."
     },
     {
-        "imagenG": "the-hollow-knight",
-        "tituloG": "Caballero Hueco",
-        "descripcionG": "Vasija sellada en el Templo del Huevo Negro para contener la infección de Hallownest."
+        "imagenG": "brothers-oro-and-mato",
+        "tituloG": "Hermanos Oro y Mato",
+        "descripcionG": "Los dos Maestros del Clavo que luchan juntos en Godhome."
+    },
+    {
+        "imagenG": "crystal-guardian",
+        "tituloG": "Guardián de cristal",
+        "descripcionG": "Minero que dispara rayos de cristal desde su puesto en la Cima de Cristal."
+    },
+    {
+        "imagenG": "dung-defender",
+        "tituloG": "Defensor del estiércol",
+        "descripcionG": "Caballero excéntrico de las Aguas Reales que ataca lanzando bolas de estiércol."
+    },
+    {
+        "imagenG": "elder-hu",
+        "tituloG": "Anciano Hu",
+        "descripcionG": "Espíritu guerrero de los Páramos Fúngicos, al que se enfrenta en un sueño."
+    },
+    {
+        "imagenG": "enraged-guardian",
+        "tituloG": "Guardián enfurecido",
+        "descripcionG": "Forma enloquecida del Guardián de cristal, mucho más agresiva."
+    },
+    {
+        "imagenG": "failed-champion",
+        "tituloG": "Campeón fallido",
+        "descripcionG": "Versión de sueño del Falso Caballero, más rápida y brutal."
+    },
+    {
+        "imagenG": "false-knight",
+        "tituloG": "Falso Caballero",
+        "descripcionG": "Enorme insecto acorazado que custodia los Cruces Olvidados. Es el primer gran jefe del viaje."
+    },
+    {
+        "imagenG": "flukemarm",
+        "tituloG": "Flukemarm",
+        "descripcionG": "Madre de las larvas de las Aguas Reales, que ataca junto a sus crías."
+    },
+    {
+        "imagenG": "galien",
+        "tituloG": "Galien",
+        "descripcionG": "Espíritu guerrero que se enfrenta en un sueño."
+    },
+    {
+        "imagenG": "god-tamer",
+        "tituloG": "Domador de dioses",
+        "descripcionG": "Campeón de los coliseos que pelea junto a una enorme bestia."
+    },
+    {
+        "imagenG": "gorb",
+        "tituloG": "Gorb",
+        "descripcionG": "Espíritu guerrero que se enfrenta en un sueño."
+    },
+    {
+        "imagenG": "great-nailsage-sly",
+        "tituloG": "Gran Maestro del Clavo Sly",
+        "descripcionG": "El antiguo tendero Sly, convertido en maestro del clavo en Godhome."
+    },
+    {
+        "imagenG": "grey-prince-zote",
+        "tituloG": "Príncipe gris Zote",
+        "descripcionG": "El orgulloso Zote, ahora campeón en Godhome."
+    },
+    {
+        "imagenG": "gruz-mother",
+        "tituloG": "Gruz Madre",
+        "descripcionG": "Larva gigante que vuela y embiste desde el techo. Un jefe temprano para aprender a esquivar."
+    },
+    {
+        "imagenG": "hive-knight",
+        "tituloG": "Caballero de la Colmena",
+        "descripcionG": "Guardián veloz de la Colmena que invoca abejas."
+    },
+    {
+        "imagenG": "hornet-protector",
+        "tituloG": "Hornet",
+        "descripcionG": "Protectora de Hallownest, veloz con su aguja e hilo. La enfrentas en las Sendas Verdes."
+    },
+    {
+        "imagenG": "hornet-sentinel",
+        "tituloG": "Centinela Hornet",
+        "descripcionG": "Segundo combate contra Hornet, más rápido y difícil que el primero."
+    },
+    {
+        "imagenG": "lost-kin",
+        "tituloG": "Pariente perdido",
+        "descripcionG": "Versión más peligrosa de la Vasija rota, consumida por la infección."
+    },
+    {
+        "imagenG": "mantis-lords",
+        "tituloG": "Señores Mantis",
+        "descripcionG": "Guerreros de la Aldea Mantis que ponen a prueba a todo el que quiera ganarse su respeto."
+    },
+    {
+        "imagenG": "markoth",
+        "tituloG": "Markoth",
+        "descripcionG": "Espíritu guerrero que se enfrenta en un sueño."
+    },
+    {
+        "imagenG": "marmu",
+        "tituloG": "Marmu",
+        "descripcionG": "Espíritu guerrero que se enfrenta en un sueño."
+    },
+    {
+        "imagenG": "massive-moss-charger",
+        "tituloG": "Gran cargador de musgo",
+        "descripcionG": "Enorme bestia cubierta de musgo que embiste en las Sendas Verdes."
+    },
+    {
+        "imagenG": "moss-mother",
+        "tituloG": "Madre de musgo",
+        "descripcionG": "Jefe cubierto de musgo que habita en Hallownest."
+    },
+    {
+        "imagenG": "nightmare-king-grimm",
+        "tituloG": "Rey de la Pesadilla Grimm",
+        "descripcionG": "Forma de pesadilla del Maestro Grimm, el combate más intenso de la Compañía."
+    },
+    {
+        "imagenG": "no-eyes",
+        "tituloG": "Sin Ojos",
+        "descripcionG": "Espíritu guerrero que se enfrenta en un sueño."
+    },
+    {
+        "imagenG": "nosk",
+        "tituloG": "Nosk",
+        "descripcionG": "Criatura que imita otras formas y acecha en Nidoprofundo."
+    },
+    {
+        "imagenG": "paintmaster-sheo",
+        "tituloG": "Sheo, Maestro Pintor",
+        "descripcionG": "Maestro del Clavo que pinta con su arte y pelea en Godhome."
     },
     {
         "imagenG": "pure-vessel",
@@ -55,8 +155,83 @@
         "descripcionG": "La vasija perfecta, el desafío más difícil que espera en Godhome."
     },
     {
+        "imagenG": "sisters-of-battle",
+        "tituloG": "Hermanas de Batalla",
+        "descripcionG": "Versión más difícil de los Señores Mantis, en Godhome."
+    },
+    {
+        "imagenG": "soul-master",
+        "tituloG": "Maestro de Almas",
+        "descripcionG": "Erudito de la Ciudad de las Lágrimas, consumido por su obsesión con el poder del alma."
+    },
+    {
+        "imagenG": "soul-tyrant",
+        "tituloG": "Tirano de almas",
+        "descripcionG": "El Maestro de Almas tras entregarse por completo al poder del alma."
+    },
+    {
+        "imagenG": "soul-warrior",
+        "tituloG": "Guerrero de almas",
+        "descripcionG": "Soldado del Santuario de Almas que se teletransporta y lanza proyectiles."
+    },
+    {
+        "imagenG": "collector",
+        "tituloG": "El Coleccionista",
+        "descripcionG": "Encierra larvas en frascos y las usa para atacar."
+    },
+    {
+        "imagenG": "the-hollow-knight",
+        "tituloG": "Caballero Hueco",
+        "descripcionG": "Vasija sellada en el Templo del Huevo Negro para contener la infección de Hallownest."
+    },
+    {
         "imagenG": "the-radiance",
         "tituloG": "Destello",
         "descripcionG": "Antigua luz olvidada y origen de la infección. El jefe final de uno de los desenlaces."
+    },
+    {
+        "imagenG": "traitor-lord",
+        "tituloG": "Señor Traidor",
+        "descripcionG": "Líder de los mantis traidores."
+    },
+    {
+        "imagenG": "troupe-master-grimm",
+        "tituloG": "Maestro Grimm",
+        "descripcionG": "Líder de la Compañía Grimm, que invita al Caballero a un ritual de fuego y espectáculo."
+    },
+    {
+        "imagenG": "uumuu",
+        "tituloG": "Uumuu",
+        "descripcionG": "Enorme criatura flotante de la Cañada de Niebla."
+    },
+    {
+        "imagenG": "vengefly-king",
+        "tituloG": "Rey Vengamosca",
+        "descripcionG": "Gran mosca que ataca desde el aire y llama a sus crías para rodearte."
+    },
+    {
+        "imagenG": "watcher-knights",
+        "tituloG": "Caballeros Vigilantes",
+        "descripcionG": "Guardianes acorazados de la Torre del Vigía, en la Ciudad de las Lágrimas."
+    },
+    {
+        "imagenG": "white-defender",
+        "tituloG": "Defensor blanco",
+        "descripcionG": "Versión de sueño del Defensor del estiércol, más fuerte y noble."
+    },
+    {
+        "imagenG": "winged-nosk",
+        "tituloG": "Nosk alado",
+        "descripcionG": "Forma voladora y más peligrosa de Nosk."
+    },
+    {
+        "imagenG": "xero",
+        "tituloG": "Xero",
+        "descripcionG": "Espíritu guerrero que se enfrenta en un sueño."
+    },
+    {
+        "imagenG": "zote-the-mighty",
+        "tituloG": "Zote el Poderoso",
+        "descripcionG": "Autoproclamado gran caballero, tan orgulloso como torpe."
     }
 ]
