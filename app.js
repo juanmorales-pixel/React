@@ -12,6 +12,24 @@ const cache = new Map()
 // Campos que NO se traducen (identificadores, enlaces, ids)
 const noTraducir = ["slug", "id", "_id", "image", "img", "icon", "url", "link", "wiki", "spotifyTrackId"]
 
+// Nombres propios que se quedan en inglés (se protegen para que el traductor no los cambie)
+const nombresPropios = [
+    "Hornet", "Zote", "Sly", "Sheo", "Oro", "Mato", "Grimm", "Gorb", "Galien", "Markoth",
+    "Marmu", "Xero", "Uumuu", "Nosk", "Flukemarm", "Mawlek", "Gruz", "No Eyes", "Elder Hu",
+]
+
+// Cambia cada nombre propio por una marca (XQ0X, XQ1X...) y luego la devuelve a su nombre
+function proteger(texto) {
+    let salida = texto
+    nombresPropios.forEach((nombre, i) => {
+        salida = salida.replace(new RegExp("\\b" + nombre + "\\b", "g"), "XQ" + i + "X")
+    })
+    return salida
+}
+function restaurar(texto) {
+    return texto.replace(/XQ\s?(\d+)\s?X/gi, (m, i) => nombresPropios[i] || m)
+}
+
 // Términos del juego como aparecen en español (se corrigen después de traducir)
 const glosario = [
     [/vasos?|recipientes?|embarcaci(?:ón|ones)|nav[ií]os?|buques?/gi, "vasija"],
@@ -46,9 +64,9 @@ async function traducirTexto(texto) {
     if (!texto.trim() || /^https?:\/\//.test(texto) || /^[\d\s.,:+-]+$/.test(texto)) return texto
     if (cache.has(texto)) return cache.get(texto)
     try {
-        const url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=es&dt=t&q=" + encodeURIComponent(texto)
+        const url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=es&dt=t&q=" + encodeURIComponent(proteger(texto))
         const data = await (await fetch(url)).json()
-        const traducido = aplicarGlosario(data[0].map((parte) => parte[0]).join(""))
+        const traducido = aplicarGlosario(restaurar(data[0].map((parte) => parte[0]).join("")))
         cache.set(texto, traducido)
         return traducido
     } catch (error) {
