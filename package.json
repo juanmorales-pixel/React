@@ -21,6 +21,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "node app.js",
+    "listar-jefes": "node listar-jefes.js",
     "start": "concurrently \"npm run server\" \"npm run dev\""
   },
   "dependencies": {

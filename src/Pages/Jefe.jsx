@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { buscarImagen } from "../Components/imagenesJefes.js";
 import "../Styles/Jefe.css";
 
 const SERVIDOR = "http://localhost:3000";
@@ -49,8 +50,10 @@ function Valor({ v }) {
 }
 
 function TarjetaJefe({ jefe }) {
+    const imagen = buscarImagen(jefe.slug);
     return (
         <>
+            {imagen && <img className="Jefe-imagen" src={imagen} alt={jefe.name} />}
             <h2>{jefe.name}</h2>
             <p className="Jefe-resumen">{jefe.summary}</p>
 

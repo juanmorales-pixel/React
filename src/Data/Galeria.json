@@ -1,16 +1,16 @@
 [
     {
-        "imagenG": "falso-caballero",
+        "imagenG": "false-knight",
         "tituloG": "Falso Caballero",
         "descripcionG": "Enorme insecto acorazado que custodia los Cruces Olvidados. Es el primer gran jefe del viaje."
     },
     {
-        "imagenG": "gruz-madre",
+        "imagenG": "gruz-mother",
         "tituloG": "Gruz Madre",
         "descripcionG": "Larva gigante que vuela y embiste desde el techo. Un jefe temprano para aprender a esquivar."
     },
     {
-        "imagenG": "rey-vengamosca",
+        "imagenG": "vengefly-king",
         "tituloG": "Rey Vengamosca",
         "descripcionG": "Gran mosca que ataca desde el aire y llama a sus crías para rodearte."
     },
@@ -20,42 +20,42 @@
         "descripcionG": "Protectora de Hallownest, veloz con su aguja e hilo. La enfrentas en las Sendas Verdes."
     },
     {
-        "imagenG": "maestro-de-almas",
+        "imagenG": "soul-master",
         "tituloG": "Maestro de Almas",
         "descripcionG": "Erudito de la Ciudad de las Lágrimas, consumido por su obsesión con el poder del alma."
     },
     {
-        "imagenG": "senores-mantis",
+        "imagenG": "mantis-lords",
         "tituloG": "Señores Mantis",
         "descripcionG": "Guerreros de la Aldea Mantis que ponen a prueba a todo el que quiera ganarse su respeto."
     },
     {
-        "imagenG": "caballeros-vigilantes",
+        "imagenG": "watcher-knights",
         "tituloG": "Caballeros Vigilantes",
         "descripcionG": "Guardianes acorazados de la Torre del Vigía, en la Ciudad de las Lágrimas."
     },
     {
-        "imagenG": "vasija-rota",
+        "imagenG": "broken-vessel",
         "tituloG": "Vasija rota",
         "descripcionG": "Vasija infectada y atrapada en las Cuencas Antiguas, sin la fuerza para librarse de la infección."
     },
     {
-        "imagenG": "maestro-grimm",
+        "imagenG": "troupe-master-grimm",
         "tituloG": "Maestro Grimm",
         "descripcionG": "Líder de la Compañía Grimm, que invita al Caballero a un ritual de fuego y espectáculo."
     },
     {
-        "imagenG": "caballero-hueco",
+        "imagenG": "hollow-knight",
         "tituloG": "Caballero Hueco",
         "descripcionG": "Vasija sellada en el Templo del Huevo Negro para contener la infección de Hallownest."
     },
     {
-        "imagenG": "vasija-pura",
+        "imagenG": "pure-vessel",
         "tituloG": "Vasija pura",
         "descripcionG": "La vasija perfecta, el desafío más difícil que espera en Godhome."
     },
     {
-        "imagenG": "destello",
+        "imagenG": "radiance",
         "tituloG": "Destello",
         "descripcionG": "Antigua luz olvidada y origen de la infección. El jefe final de uno de los desenlaces."
     }

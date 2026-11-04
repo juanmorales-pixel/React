@@ -107,3 +107,12 @@
     margin: 4px 0;
     padding-left: 18px;
 }
+
+.Jefe-imagen {
+    display: block;
+    max-width: 280px;
+    max-height: 280px;
+    margin: 0 auto 16px;
+    object-fit: contain;
+    border-radius: 8px;
+}
