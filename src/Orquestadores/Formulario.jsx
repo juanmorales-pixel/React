@@ -1,16 +1,8 @@
 import { Fragment } from "react";
 import { Label, Boton, Input } from "./Tarjeta.jsx";
+import { acciones } from "../Config/acciones.js";
 import FunForm from "../Data/FunForm.json";
 import "../Styles/EstilosDeOrquestador.css";
-
-const acciones = {
-    Issac: () => {
-        alert('isaac and his mother , live alone in a small house on a hill , the life was a simple');
-    },
-    Recargar: () => {
-        window.location.reload();
-    },
-};
 
 export default function Formulario() {
     return (

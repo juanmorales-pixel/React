@@ -21,11 +21,12 @@ export function TarjetaG ({
     numero,
     imagenG,
     tituloG,
-    descripcionG
+    descripcionG,
+    color
 })
 {
     return (
-        <div className="TarjetaG-Container">
+        <div className="TarjetaG-Container" style={color ? { borderColor: color } : undefined}>
             
             <div className="TarjetaG-Imagen">
                 <ImagenG imagenG={imagenG} alt={tituloG} />
@@ -60,11 +61,11 @@ export function Input({Type, Nombre, Infolabel}) {
         </div>
     );
 }
-export function Boton({TextoButton,onClick }) {
+export function Boton({TextoButton,onClick,type }) {
     return (
         <div className="">
              
-            <Button TextoButton={TextoButton} onClick={onClick} />
+            <Button TextoButton={TextoButton} onClick={onClick} type={type} />
             
         </div>
     );

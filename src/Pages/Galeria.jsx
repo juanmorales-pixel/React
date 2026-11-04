@@ -3,7 +3,6 @@ import { TarjetaG } from "../Orquestadores/Tarjeta.jsx";
 import EncabezadoG from "../Components/ComponentsG/EncabezadoG.jsx";
 import BuscadorG from "../Components/ComponentsG/BuscadorG.jsx";
 import { buscarImagen } from "../Components/imagenesJefes.js";
-import Galeria from "../Data/Galeria.json";
 import respaldo from "../Assets/imagenes/hk.jpg";
 import "../Styles/EstilosDeOrquestador.css";
 
@@ -11,11 +10,11 @@ import "../Styles/EstilosDeOrquestador.css";
 const limpiar = (texto) =>
     texto.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 
-export default function GaleriaPagina() {
+export default function GaleriaPagina({ tarjetas }) {
     const [busqueda, setBusqueda] = useState("");
 
     // Se numera antes de filtrar para que cada jefe conserve su número
-    const visibles = Galeria
+    const visibles = tarjetas
         .map((jefe, indice) => ({ ...jefe, numero: indice + 1 }))
         .filter((jefe) => limpiar(jefe.tituloG).includes(limpiar(busqueda.trim())));
 
@@ -28,11 +27,12 @@ export default function GaleriaPagina() {
                 {
                     visibles.map((Gar) => (
                         <TarjetaG
-                            key={Gar.imagenG}
+                            key={`${Gar.imagenG}-${Gar.numero}`}
                             numero={Gar.numero}
                             tituloG={Gar.tituloG}
-                            imagenG={buscarImagen(Gar.imagenG) || respaldo}
+                            imagenG={buscarImagen(Gar.imagenG) || Gar.imagenG || respaldo}
                             descripcionG={Gar.descripcionG}
+                            color={Gar.color}
                         />
                     ))
                 }
