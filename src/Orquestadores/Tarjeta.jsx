@@ -1,6 +1,7 @@
 import "../Styles/EstilosDeOrquestador.css";
 import Imagen from "../Components/Imagen.jsx";
 import ImagenG from "../Components/ComponentsG/ImagenG.jsx";
+import Insignia from "../Components/ComponentsG/Insignia.jsx";
 import TituloG from "../Components/ComponentsG/TituloG.jsx";
 import DescriptionG from "../Components/ComponentsG/DescripcionG.jsx";
 import Button from "../Components/ComponentsG/Formulario/Button.jsx";
@@ -17,6 +18,7 @@ export default function Tarjeta({ img }) {
 }
 
 export function TarjetaG ({
+    numero,
     imagenG,
     tituloG,
     descripcionG
@@ -25,7 +27,10 @@ export function TarjetaG ({
     return (
         <div className="TarjetaG-Container">
             
-            <ImagenG imagenG={imagenG} alt={tituloG} />
+            <div className="TarjetaG-Imagen">
+                <ImagenG imagenG={imagenG} alt={tituloG} />
+                {numero && <Insignia numero={numero} />}
+            </div>
             <div className="Text-Container">
             <TituloG tituloG={tituloG} />
             <DescriptionG descripcionG={descripcionG} />
