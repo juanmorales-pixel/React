@@ -1,12 +1,11 @@
 import Tarjeta from "../Orquestadores/Tarjeta.jsx";
-import docs from "../Data/data.json";
 import "../Styles/EstilosDeOrquestador.css";
 
-export default function Inicio() {
+export default function Inicio({ tarjetas }) {
     return (
         <div className="menu">
             {
-                docs.map((Doc, index) => (
+                tarjetas.map((Doc, index) => (
                     <Tarjeta
                         key={index}
                         img={Doc.imagen}
