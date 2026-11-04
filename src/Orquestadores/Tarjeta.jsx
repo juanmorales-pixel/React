@@ -25,7 +25,7 @@ export function TarjetaG ({
     return (
         <div className="TarjetaG-Container">
             
-            <ImagenG imagenG={imagenG} /> 
+            <ImagenG imagenG={imagenG} alt={tituloG} />
             <div className="Text-Container">
             <TituloG tituloG={tituloG} />
             <DescriptionG descripcionG={descripcionG} />

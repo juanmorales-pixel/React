@@ -1,27 +1,62 @@
 [
     {
-        "imagenG": "src\\Assets\\imagenes\\hk.jpg",
-        "tituloG": "Paisaje de Montaña",
-        "descripcionG": "Un hermoso paisaje de montaña con un cielo despejado y un río que fluye a través del valle."
-    },
-     {
-        "imagenG": "src\\Assets\\imagenes\\hk.jpg",
-        "tituloG": "Paisaje de Montaña",
-        "descripcionG": "Un hermoso paisaje de montaña con un cielo despejado y un río que fluye a través del valle."
+        "imagenG": "src/Assets/imagenes/jefes/falso-caballero.jpg",
+        "tituloG": "Falso Caballero",
+        "descripcionG": "Enorme insecto acorazado que custodia los Cruces Olvidados. Es el primer gran jefe del viaje."
     },
     {
-        "imagenG": "src\\Assets\\imagenes\\holowmini.jpg",
-        "tituloG": "Paisaje de Montaña",
-        "descripcionG": "Un hermoso paisaje de montaña con un cielo despejado y un río que fluye a través del valle."
+        "imagenG": "src/Assets/imagenes/jefes/gruz-madre.jpg",
+        "tituloG": "Gruz Madre",
+        "descripcionG": "Larva gigante que vuela y embiste desde el techo. Un jefe temprano para aprender a esquivar."
     },
     {
-        "imagenG": "src\\Assets\\imagenes\\hk.jpg",
-        "tituloG": "Paisaje de Montaña",
-        "descripcionG": "Un hermoso paisaje de montaña con un cielo despejado y un río que fluye a través del valle."
+        "imagenG": "src/Assets/imagenes/jefes/rey-vengamosca.jpg",
+        "tituloG": "Rey Vengamosca",
+        "descripcionG": "Gran mosca que ataca desde el aire y llama a sus crías para rodearte."
     },
     {
-        "imagenG": "src\\Assets\\imagenes\\hk.jpg",
-        "tituloG": "Paisaje de Montaña",
-        "descripcionG": "Un hermoso paisaje de montaña con un cielo despejado y un río que fluye a través del valle."
+        "imagenG": "src/Assets/imagenes/jefes/hornet.jpg",
+        "tituloG": "Hornet",
+        "descripcionG": "Protectora de Hallownest, veloz con su aguja e hilo. La enfrentas en las Sendas Verdes."
+    },
+    {
+        "imagenG": "src/Assets/imagenes/jefes/maestro-de-almas.jpg",
+        "tituloG": "Maestro de Almas",
+        "descripcionG": "Erudito de la Ciudad de las Lágrimas, consumido por su obsesión con el poder del alma."
+    },
+    {
+        "imagenG": "src/Assets/imagenes/jefes/senores-mantis.jpg",
+        "tituloG": "Señores Mantis",
+        "descripcionG": "Guerreros de la Aldea Mantis que ponen a prueba a todo el que quiera ganarse su respeto."
+    },
+    {
+        "imagenG": "src/Assets/imagenes/jefes/caballeros-vigilantes.jpg",
+        "tituloG": "Caballeros Vigilantes",
+        "descripcionG": "Guardianes acorazados de la Torre del Vigía, en la Ciudad de las Lágrimas."
+    },
+    {
+        "imagenG": "src/Assets/imagenes/jefes/vasija-rota.jpg",
+        "tituloG": "Vasija rota",
+        "descripcionG": "Vasija infectada y atrapada en las Cuencas Antiguas, sin la fuerza para librarse de la infección."
+    },
+    {
+        "imagenG": "src/Assets/imagenes/jefes/maestro-grimm.jpg",
+        "tituloG": "Maestro Grimm",
+        "descripcionG": "Líder de la Compañía Grimm, que invita al Caballero a un ritual de fuego y espectáculo."
+    },
+    {
+        "imagenG": "src/Assets/imagenes/jefes/caballero-hueco.jpg",
+        "tituloG": "Caballero Hueco",
+        "descripcionG": "Vasija sellada en el Templo del Huevo Negro para contener la infección de Hallownest."
+    },
+    {
+        "imagenG": "src/Assets/imagenes/jefes/vasija-pura.jpg",
+        "tituloG": "Vasija pura",
+        "descripcionG": "La vasija perfecta, el desafío más difícil que espera en Godhome."
+    },
+    {
+        "imagenG": "src/Assets/imagenes/jefes/destello.jpg",
+        "tituloG": "Destello",
+        "descripcionG": "Antigua luz olvidada y origen de la infección. El jefe final de uno de los desenlaces."
     }
 ]
