@@ -1,25 +1,25 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { inicial } from "../Config/formularioConfig.js";
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
+import { inicial } from "../Config/formularioConfig.js"
 
 export default function useFormulario({ agregar }) {
-    const navigate = useNavigate();
-    const [datos, setDatos] = useState(inicial);
+    const navigate = useNavigate()
+    const [datos, setDatos] = useState(inicial)
 
     const cambiar = (e) => {
-        setDatos({ ...datos, [e.target.name]: e.target.value });
-    };
+        setDatos({ ...datos, [e.target.name]: e.target.value })
+    }
 
     const enviar = (e) => {
-        e.preventDefault();
+        e.preventDefault()
         agregar({
             tituloG: datos.Nombre,
             imagenG: datos.Imagen,
             descripcionG: datos.Descripcion,
             color: datos.Color,
-        });
-        navigate("/Galeria");
-    };
+        })
+        navigate("/Galeria")
+    }
 
     return {
         datos,
@@ -27,5 +27,5 @@ export default function useFormulario({ agregar }) {
         onEnviar: enviar,
         onReset: () => setDatos(inicial),
         onVolver: () => navigate("/Galeria"),
-    };
+    }
 }

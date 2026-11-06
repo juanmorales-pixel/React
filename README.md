@@ -1,16 +1,22 @@
-# React + Vite
+# Hallownest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Galería de jefes de Hollow Knight y enciclopedia en español (jefes, personajes, áreas, amuletos y habilidades).
 
-Currently, two official plugins are available:
+## Cómo correrlo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```
+npm install
+npm start
+```
 
-## React Compiler
+`npm start` enciende dos programas a la vez: el servidor Express (`app.js`, puerto 3000) y Vite (la página React, puerto 5173).
+Abre http://localhost:5173. La página pide los datos a `/api/...` y Vite los reenvía a Express.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Carpetas (programación por capas)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/Components`: átomos (una sola etiqueta: título, texto, botón, campo...)
+- `src/Orquestadores`: unen átomos (tarjeta, formulario, navegación...)
+- `src/Pages`: páginas completas
+- `src/Hook`: la lógica (estado, fetch, navegación)
+- `src/Config`: listas y textos fijos
+- `glosario.js`: nombres del juego en español que usa el servidor al traducir

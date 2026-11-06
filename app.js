@@ -12,35 +12,32 @@ const cache = new Map()
 // Campos que NO se traducen (identificadores, enlaces, ids)
 const noTraducir = ["slug", "id", "_id", "image", "img", "icon", "url", "link", "wiki", "spotifyTrackId"]
 
-// Nombres propios que se quedan en inglés (se protegen para que el traductor no los cambie)
-const nombresPropios = [
-    "Hornet", "Zote", "Sly", "Sheo", "Oro", "Mato", "Grimm", "Gorb", "Galien", "Markoth",
-    "Marmu", "Xero", "Uumuu", "Nosk", "Flukemarm", "Mawlek", "Gruz", "No Eyes", "Elder Hu",
-]
+const { nombres, terminos } = require("./glosario")
+const jefes = require("./src/Data/Galeria.json")
+const claves = Object.keys(nombres).sort((a, b) => b.length - a.length)
 
-// Cambia cada nombre propio por una marca (XQ0X, XQ1X...) y luego la devuelve a su nombre
+// Cambia cada nombre del juego por una marca (XQ0X, XQ1X...) y luego la devuelve en español
 function proteger(texto) {
     let salida = texto
-    nombresPropios.forEach((nombre, i) => {
+    claves.forEach((nombre, i) => {
         salida = salida.replace(new RegExp("\\b" + nombre + "\\b", "g"), "XQ" + i + "X")
     })
     return salida
 }
 function restaurar(texto) {
-    return texto.replace(/XQ\s?(\d+)\s?X/gi, (m, i) => nombresPropios[i] || m)
+    return texto.replace(/XQ\s?(\d+)\s?X/gi, (m, i) => nombres[claves[i]] || m)
 }
 
-// Términos del juego como aparecen en español (se corrigen después de traducir)
-const glosario = [
-    [/vasos?|recipientes?|embarcaci(?:ón|ones)|nav[ií]os?|buques?/gi, "vasija"],
-    [/encantos?|hechizos?/gi, "amuleto"],
-    [/resplandor(?:es)?|radiancias?/gi, "destello"],
-]
+// Los jefes usan siempre el nombre en español de Galeria.json
+function nombreJefe(item) {
+    const jefe = jefes.find((j) => j.imagenG === item.slug)
+    return jefe ? { ...item, name: jefe.tituloG } : item
+}
 
 // Aplica el glosario conservando mayúscula inicial y plural
 function aplicarGlosario(texto) {
     let salida = texto
-    for (const [patron, palabra] of glosario) {
+    for (const [patron, palabra] of terminos) {
         salida = salida.replace(patron, (m) => {
             const plural = /s$|ones$/i.test(m) ? "s" : ""
             const nueva = palabra + plural
@@ -102,7 +99,8 @@ async function pedir(ruta, res) {
         const data = await response.json()
         if (!response.ok) return res.status(response.status).json(data)
         if (!cache.has(ruta)) cache.set(ruta, await traducir(data))
-        res.json(cache.get(ruta))
+        const resultado = cache.get(ruta)
+        res.json(ruta.startsWith("/boss/") ? nombreJefe(resultado) : resultado)
     } catch (error) {
         res.status(500).json({ error: "No se pudo consultar la API" })
     }
@@ -129,7 +127,8 @@ app.get("/:tipo", async (req, res) => {
             nuevos.forEach((i) => vistos.add(i.slug || i.name))
             todos.push(...nuevos)
         }
-        const traducida = await traducirLista(todos)
+        let traducida = await traducirLista(todos)
+        if (tipo === "boss") traducida = traducida.map(nombreJefe)
         cache.set("lista/" + tipo, traducida)
         res.json(traducida)
     } catch (error) {
