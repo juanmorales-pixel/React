@@ -7,7 +7,7 @@ export const categorias = [
 ]
 
 // Campos que no se muestran (identificadores, enlaces, imágenes)
-export const ocultos = ["slug", "id", "_id", "image", "img", "icon", "url", "link", "wiki", "spotifyTrackId", "name"]
+export const ocultos = ["slug", "id", "_id", "image", "img", "icon", "url", "link", "wiki", "spotifyTrackId", "name", "music"]
 
 // Nombres de los campos de la API en español
 export const etiquetas = {

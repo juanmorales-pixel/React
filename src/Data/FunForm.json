@@ -1,0 +1,21 @@
+{
+    "inputs": [
+        {
+            "Titulolabel": "Nombre",
+            "Infolabel": "nombre",
+            "Type": "text",
+            "Titulo": "nombre"
+        },
+        {
+            "Titulolabel": "Correo",
+            "Infolabel": "correo",
+            "Type": "email",
+            "Titulo": "correo"
+        }
+    ],
+    "button": [
+        { "TextoButton": " Issac➢ ", "accion": "Issac" },
+        { "TextoButton": " Recargar✕ ", "accion": "Recargar" }
+    ]
+
+}
