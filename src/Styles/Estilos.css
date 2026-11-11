@@ -1,0 +1,36 @@
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-family: sans-serif; color: #fff; background: #14181f; }
+img { max-width: 100%; }
+input, select, button { padding: 8px 12px; font-size: 1rem; border-radius: 6px; border: 1px solid #2f4257; color: #fff; background: #1c2733; }
+button { cursor: pointer; }
+button:hover { background: rgb(224, 60, 49); }
+
+.Navegacion { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px; padding: 16px; background: #1c1c1c; }
+.Enlace { color: #fff; text-decoration: none; font-weight: bold; padding: 6px 12px; border-radius: 6px; }
+.Enlace:hover { background: #244668; }
+.Enlace.activo { background: rgb(224, 60, 49); }
+
+.Pagina { max-width: 1200px; margin: 0 auto; padding: 32px 16px 48px; }
+.Pagina h1, .Centrado { text-align: center; }
+.Pagina input[type="search"] { display: block; width: min(420px, 100%); margin: 0 auto 28px; }
+
+.Inicio { min-height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 24px; background: url("../Assets/imagenes/Banner.png") center 40% / cover no-repeat; }
+
+.Rejilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+.Tarjeta { position: relative; display: flex; flex-direction: column; overflow: hidden; background: #16202b; border: 1px solid #2a3b4d; border-radius: 12px; }
+.Tarjeta img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.Tarjeta h3 { margin: 12px 12px 4px; }
+.Tarjeta p { margin: 0 12px 14px; color: #9fb3c8; font-size: 0.9rem; }
+
+.Formulario { max-width: 320px; margin: 24px auto; padding: 20px; display: flex; flex-direction: column; gap: 12px; background: #353535; border-radius: 8px; }
+.Campo { display: flex; flex-direction: column; gap: 4px; }
+
+.Selectores { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 24px; }
+.Detalle { max-width: 720px; margin: 0 auto; padding: 20px; background: #16202b; border: 1px solid #2a3b4d; border-radius: 12px; }
+.Detalle-imagen { display: block; width: 220px; margin: 0 auto 12px; border-radius: 8px; }
+.Detalle ul { padding-left: 20px; }
+.Error { color: #ff8a80; text-align: center; }
+
+.Musica { width: 100%; height: 80px; margin-top: 20px; border: 0; border-radius: 12px; }
+.Icono { width: 20px; height: 20px; vertical-align: middle; }
+.Gif-formulario { display: block; margin: 16px auto 0; max-width: 200px; max-height: 280px; object-fit: contain; }
